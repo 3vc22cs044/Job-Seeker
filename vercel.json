@@ -1,7 +1,19 @@
 {
     "rewrites": [
         {
-            "source": "/((?!assets/|ai-resume-builder/|kodnest-build-system/|placement-readiness/|.*\\..*).*)",
+            "source": "/ai-resume-builder/(.*)",
+            "destination": "/ai-resume-builder/$1"
+        },
+        {
+            "source": "/kodnest-build-system/(.*)",
+            "destination": "/kodnest-build-system/$1"
+        },
+        {
+            "source": "/placement-readiness/(.*)",
+            "destination": "/placement-readiness/$1"
+        },
+        {
+            "source": "/((?!assets/|ai-resume-builder|kodnest-build-system|placement-readiness|.*\\..*).*)",
             "destination": "/index.html"
         }
     ]

@@ -18,7 +18,7 @@ const projects = [
     icon: <Settings size={32} />,
     tag: "Dev Tool",
     path: "/kodnest-build-system",
-    link: "/kodnest-build-system/index.html"
+    link: "/kodnest-build-system/"
   },
   {
     title: "AI Resume Builder",
@@ -26,7 +26,7 @@ const projects = [
     icon: <FileText size={32} />,
     tag: "AI Powered",
     path: "/ai-resume-builder",
-    link: "/ai-resume-builder/index.html"
+    link: "/ai-resume-builder/"
   },
   {
     title: "Placement Readiness",
@@ -34,7 +34,7 @@ const projects = [
     icon: <Briefcase size={32} />,
     tag: "Career Ready",
     path: "/placement-readiness",
-    link: "/placement-readiness/index.html"
+    link: "/placement-readiness/"
   }
 ];
 
