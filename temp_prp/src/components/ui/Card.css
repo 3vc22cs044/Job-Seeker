@@ -1,0 +1,31 @@
+.card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.card-header {
+    margin-bottom: var(--space-2);
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    /* Cards use sans for headers typically in this calm style, or could be serif */
+}
+
+.card-content {
+    color: #444;
+    font-family: var(--font-sans);
+}
+
+.card-actions {
+    margin-top: var(--space-3);
+    display: flex;
+    gap: var(--space-2);
+}

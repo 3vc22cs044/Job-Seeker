@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Notification Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="design-system/kodnest-design-system.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body class="jnt-app">
+  <header class="jnt-nav">
+    <a href="#/" class="jnt-nav__brand">Job Notification Tracker</a>
+    <nav>
+      <ul class="jnt-nav__links">
+        <li><a href="#/dashboard" data-route="dashboard">Dashboard</a></li>
+        <li><a href="#/saved" data-route="saved">Saved</a></li>
+        <li><a href="#/digest" data-route="digest">Digest</a></li>
+        <li><a href="#/settings" data-route="settings">Settings</a></li>
+        <li><a href="#/proof" data-route="proof">Proof</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="jnt-nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span class="jnt-nav__toggle-icon"></span>
+    </button>
+  </header>
+
+  <main class="jnt-main">
+    <div id="jnt-content">
+      <div class="jnt-page jnt-landing is-active">
+        <h1 class="jnt-landing__headline">Stop Missing The Right Jobs.</h1>
+        <p class="jnt-landing__subtext">Precision-matched job discovery delivered daily at 9AM.</p>
+        <p class="jnt-landing__cta-wrap">
+          <a href="#/settings" class="kn-btn kn-btn--primary jnt-cta">Start Tracking</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

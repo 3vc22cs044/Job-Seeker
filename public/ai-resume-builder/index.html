@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Resume Builder — Build Track</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="design-system/kodnest-design-system.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body class="kn-app">
+  <nav class="kn-nav">
+    <div class="kn-nav__brand">AI Resume Builder</div>
+    <ul class="kn-nav__links">
+      <li><a href="#/" data-route="home">Home</a></li>
+      <li><a href="#/builder" data-route="builder">Builder</a></li>
+      <li><a href="#/preview" data-route="preview">Preview</a></li>
+      <li><a href="#/proof" data-route="proof">Proof</a></li>
+    </ul>
+    <div class="kn-nav__status">
+      <span id="kn-status-badge" class="kn-badge kn-badge--neutral">Ready</span>
+    </div>
+  </nav>
+
+  <main id="kn-main" class="kn-container">
+    <!-- Component injected by app.js -->
+    <div class="kn-loading">Loading application...</div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

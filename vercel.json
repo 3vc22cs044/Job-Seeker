@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/((?!assets/|.*\\..*).*)",
+            "source": "/((?!assets/|ai-resume-builder/|kodnest-build-system/|placement-readiness/|.*\\..*).*)",
             "destination": "/index.html"
         }
     ]

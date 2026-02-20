@@ -1,0 +1,70 @@
+.proof-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-3) var(--space-4);
+    z-index: 100;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.proof-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proof-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-small);
+    color: #444;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.proof-item:hover {
+    opacity: 0.8;
+}
+
+.proof-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    appearance: none;
+    /* Custom checkbox style would go here */
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.proof-item input[type="checkbox"]:checked {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+/* Tick mark */
+.proof-item input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.proof-input-placeholder {
+    font-size: 0.75rem;
+    color: #999;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 2px;
+}

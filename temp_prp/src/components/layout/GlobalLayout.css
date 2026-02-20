@@ -1,0 +1,22 @@
+.global-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-bg);
+    overflow: hidden;
+    /* Prevent body scroll, handle inside main */
+}
+
+.main-scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 80px;
+    /* Space for footer */
+}
+
+.content-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+    width: 100%;
+}

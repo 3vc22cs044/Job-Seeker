@@ -1,9 +1,9 @@
 import React from 'react';
-import { 
-  Briefcase, 
-  FileText, 
-  Settings, 
-  ArrowRight, 
+import {
+  Briefcase,
+  FileText,
+  Settings,
+  ArrowRight,
   Github,
   Zap,
   Globe,
@@ -18,7 +18,7 @@ const projects = [
     icon: <Settings size={32} />,
     tag: "Dev Tool",
     path: "/kodnest-build-system",
-    link: "https://3vc22cs044.github.io/Kodnest-build-system"
+    link: "/kodnest-build-system/index.html"
   },
   {
     title: "AI Resume Builder",
@@ -26,7 +26,7 @@ const projects = [
     icon: <FileText size={32} />,
     tag: "AI Powered",
     path: "/ai-resume-builder",
-    link: "https://3vc22cs044.github.io/AI-Resume-Builder"
+    link: "/ai-resume-builder/index.html"
   },
   {
     title: "Placement Readiness",
@@ -34,14 +34,14 @@ const projects = [
     icon: <Briefcase size={32} />,
     tag: "Career Ready",
     path: "/placement-readiness",
-    link: "https://3vc22cs044.github.io/Placement-Readiness"
+    link: "/placement-readiness/index.html"
   }
 ];
 
 function App() {
   return (
     <div className="app-container">
-      <motion.nav 
+      <motion.nav
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -75,7 +75,7 @@ function App() {
 
       <div className="project-grid">
         {projects.map((project, index) => (
-          <motion.div 
+          <motion.div
             key={index}
             className="project-card"
             initial={{ y: 30, opacity: 0 }}

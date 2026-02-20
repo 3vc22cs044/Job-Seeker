@@ -1,0 +1,24 @@
+.context-header {
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-4);
+    border-bottom: 1px solid transparent;
+    /* Placeholder for potential border */
+}
+
+.context-title {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h1);
+    color: var(--color-text);
+    margin-bottom: var(--space-1);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.context-description {
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    /* 18px */
+    color: #555;
+    line-height: 1.6;
+    max-width: 720px;
+}

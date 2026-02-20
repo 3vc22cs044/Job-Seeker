@@ -1,0 +1,228 @@
+/**
+ * KodNest Premium Build System — Components
+ * Same hover, same radius, no drop shadows, no visual drift.
+ */
+
+/* ——— Buttons ——— */
+.kn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--kn-space-1);
+  padding: var(--kn-space-1) var(--kn-space-2);
+  font-size: var(--kn-caption);
+  font-weight: 500;
+  border-radius: var(--kn-radius);
+  border: var(--kn-border-width) solid transparent;
+  transition: background-color var(--kn-duration) var(--kn-ease),
+    border-color var(--kn-duration) var(--kn-ease),
+    color var(--kn-duration) var(--kn-ease);
+}
+
+.kn-btn--primary {
+  background-color: var(--kn-accent);
+  color: #fff;
+  border-color: var(--kn-accent);
+}
+
+.kn-btn--primary:hover {
+  background-color: #6d0000;
+  border-color: #6d0000;
+}
+
+.kn-btn--secondary {
+  background-color: transparent;
+  color: var(--kn-text);
+  border-color: var(--kn-border);
+}
+
+.kn-btn--secondary:hover {
+  border-color: var(--kn-text-muted);
+  color: var(--kn-text);
+}
+
+.kn-btn--ghost {
+  background-color: transparent;
+  color: var(--kn-text-muted);
+  border-color: transparent;
+}
+
+.kn-btn--ghost:hover {
+  color: var(--kn-text);
+  background-color: rgba(17, 17, 17, 0.06);
+}
+
+/* ——— Status badge (Top Bar) ——— */
+.kn-badge {
+  display: inline-block;
+  padding: var(--kn-space-1) var(--kn-space-2);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--kn-radius);
+  border: var(--kn-border-width) solid var(--kn-border);
+  background-color: var(--kn-bg);
+  color: var(--kn-text-muted);
+  transition: border-color var(--kn-duration) var(--kn-ease), color var(--kn-duration) var(--kn-ease);
+}
+
+.kn-badge--not-started {
+  color: var(--kn-text-muted);
+  border-color: var(--kn-border);
+}
+
+.kn-badge--progress {
+  color: var(--kn-warning);
+  border-color: var(--kn-warning);
+}
+
+.kn-badge--shipped {
+  color: var(--kn-success);
+  border-color: var(--kn-success);
+}
+
+/* ——— Cards ——— */
+.kn-card {
+  padding: var(--kn-space-3);
+  border: var(--kn-border-width) solid var(--kn-border);
+  border-radius: var(--kn-radius);
+  background-color: var(--kn-bg);
+  transition: border-color var(--kn-duration) var(--kn-ease);
+}
+
+.kn-card:hover {
+  border-color: var(--kn-text-muted);
+}
+
+.kn-card__title {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-heading-md);
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-2);
+}
+
+/* ——— Inputs ——— */
+.kn-input,
+.kn-textarea {
+  width: 100%;
+  padding: var(--kn-space-1) var(--kn-space-2);
+  font-size: var(--kn-body);
+  line-height: var(--kn-line-body);
+  color: var(--kn-text);
+  background-color: var(--kn-bg);
+  border: var(--kn-border-width) solid var(--kn-border);
+  border-radius: var(--kn-radius);
+  transition: border-color var(--kn-duration) var(--kn-ease);
+}
+
+.kn-input::placeholder,
+.kn-textarea::placeholder {
+  color: var(--kn-text-muted);
+}
+
+.kn-input:hover,
+.kn-textarea:hover {
+  border-color: var(--kn-text-muted);
+}
+
+.kn-input:focus,
+.kn-textarea:focus {
+  outline: none;
+  border-color: var(--kn-border-focus);
+}
+
+.kn-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ——— Copyable prompt box (Secondary panel) ——— */
+.kn-prompt-box {
+  position: relative;
+  margin: var(--kn-space-2) 0;
+}
+
+.kn-prompt-box__field {
+  width: 100%;
+  padding: var(--kn-space-2);
+  font-size: 0.875rem;
+  font-family: var(--kn-font-sans);
+  line-height: 1.6;
+  color: var(--kn-text);
+  background-color: var(--kn-bg);
+  border: var(--kn-border-width) solid var(--kn-border);
+  border-radius: var(--kn-radius);
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color var(--kn-duration) var(--kn-ease);
+}
+
+.kn-prompt-box__field:focus {
+  outline: none;
+  border-color: var(--kn-border-focus);
+}
+
+.kn-prompt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--kn-space-1);
+  margin-top: var(--kn-space-2);
+}
+
+/* ——— Secondary panel block ——— */
+.kn-panel-block {
+  margin-bottom: var(--kn-space-3);
+}
+
+.kn-panel-block__label {
+  font-size: var(--kn-caption);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--kn-text-muted);
+  margin: 0 0 var(--kn-space-1);
+}
+
+.kn-panel-block p {
+  font-size: var(--kn-body);
+  line-height: var(--kn-line-body);
+  margin: 0;
+}
+
+/* ——— Error state ——— */
+.kn-error-box {
+  padding: var(--kn-space-2);
+  border: var(--kn-border-width) solid var(--kn-warning);
+  border-radius: var(--kn-radius);
+  background-color: rgba(139, 115, 85, 0.08);
+}
+
+.kn-error-box__title {
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-1);
+}
+
+.kn-error-box__message {
+  font-size: var(--kn-caption);
+  color: var(--kn-text-muted);
+  margin: 0;
+}
+
+/* ——— Empty state ——— */
+.kn-empty-state {
+  padding: var(--kn-space-4);
+  text-align: center;
+  border: var(--kn-border-width) dashed var(--kn-border);
+  border-radius: var(--kn-radius);
+}
+
+.kn-empty-state__title {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-heading-md);
+  margin: 0 0 var(--kn-space-1);
+}
+
+.kn-empty-state__action {
+  margin-top: var(--kn-space-2);
+}

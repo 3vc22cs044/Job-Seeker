@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KodNest Premium Build System — Design System Reference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="design-system/kodnest-design-system.css" />
+</head>
+<body class="kn-page">
+  <!-- Top Bar -->
+  <header class="kn-topbar">
+    <span class="kn-topbar__project">Project Alpha</span>
+    <span class="kn-topbar__progress">Step 2 / 5</span>
+    <span class="kn-topbar__status">
+      <span class="kn-badge kn-badge--progress">In Progress</span>
+    </span>
+  </header>
+
+  <main class="kn-main">
+    <!-- Context Header -->
+    <section class="kn-context-header">
+      <h1 class="kn-h1">Define the scope</h1>
+      <p class="kn-subtext">Clarify what you’re building so the next steps stay on track.</p>
+    </section>
+
+    <!-- Primary Workspace + Secondary Panel -->
+    <div class="kn-workspace-row">
+      <div class="kn-workspace-primary">
+        <div class="kn-card">
+          <h3 class="kn-card__title">Primary workspace</h3>
+          <p class="kn-text-block">Main product interaction lives here. Clean cards, predictable components, no crowding. Use spacing scale: 8, 16, 24, 40, 64px only.</p>
+          <div style="margin-top: var(--kn-space-3);">
+            <input type="text" class="kn-input" placeholder="Example input" aria-label="Example input" />
+          </div>
+        </div>
+        <div class="kn-card" style="margin-top: var(--kn-space-2);">
+          <h3 class="kn-card__title">Empty state example</h3>
+          <div class="kn-empty-state">
+            <p class="kn-empty-state__title">No items yet</p>
+            <p class="kn-subtext">Add your first item to get started.</p>
+            <div class="kn-empty-state__action">
+              <button type="button" class="kn-btn kn-btn--primary">Add item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="kn-workspace-secondary">
+        <div class="kn-panel-block">
+          <div class="kn-panel-block__label">Step</div>
+          <p>Write one or two sentences that describe what this step achieves. No hype.</p>
+        </div>
+        <div class="kn-prompt-box">
+          <div class="kn-panel-block__label">Copyable prompt</div>
+          <textarea class="kn-prompt-box__field" readonly placeholder="Paste or edit the prompt here…">Build a simple form with name and email. Validate on submit.</textarea>
+          <div class="kn-prompt-actions">
+            <button type="button" class="kn-btn kn-btn--primary">Copy</button>
+            <button type="button" class="kn-btn kn-btn--secondary">Build in Lovable</button>
+            <button type="button" class="kn-btn kn-btn--ghost">It Worked</button>
+            <button type="button" class="kn-btn kn-btn--ghost">Error</button>
+            <button type="button" class="kn-btn kn-btn--ghost">Add Screenshot</button>
+          </div>
+        </div>
+        <div class="kn-error-box" style="margin-top: var(--kn-space-2);">
+          <p class="kn-error-box__title">Something went wrong</p>
+          <p class="kn-error-box__message">The build failed because the prompt was empty. Add a short description and try again.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Proof Footer: checklist + optional proof input per item -->
+    <footer class="kn-proof-footer">
+      <p class="kn-proof-footer__title">Proof</p>
+      <ul class="kn-proof-checklist" role="list">
+        <li class="kn-proof-item">
+          <input type="checkbox" id="p1" aria-label="UI Built" />
+          <label for="p1">UI Built</label>
+          <span class="kn-proof-input"><input type="text" class="kn-input" placeholder="Link or proof" aria-label="Proof for UI Built" /></span>
+        </li>
+        <li class="kn-proof-item">
+          <input type="checkbox" id="p2" aria-label="Logic Working" />
+          <label for="p2">Logic Working</label>
+          <span class="kn-proof-input"><input type="text" class="kn-input" placeholder="Link or proof" aria-label="Proof for Logic Working" /></span>
+        </li>
+        <li class="kn-proof-item">
+          <input type="checkbox" id="p3" aria-label="Test Passed" />
+          <label for="p3">Test Passed</label>
+          <span class="kn-proof-input"><input type="text" class="kn-input" placeholder="Link or proof" aria-label="Proof for Test Passed" /></span>
+        </li>
+        <li class="kn-proof-item">
+          <input type="checkbox" id="p4" aria-label="Deployed" />
+          <label for="p4">Deployed</label>
+          <span class="kn-proof-input"><input type="text" class="kn-input" placeholder="Link or proof" aria-label="Proof for Deployed" /></span>
+        </li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>

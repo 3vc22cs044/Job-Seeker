@@ -1,0 +1,50 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: var(--space-2);
+    width: 100%;
+}
+
+.input-label {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.input-field {
+    padding: 10px 12px;
+    font-family: var(--font-sans);
+    font-size: var(--font-size-body);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-white);
+    transition: border-color var(--transition-fast);
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: var(--color-text);
+    /* Focus state is clearly active but calm */
+    box-shadow: 0 0 0 1px var(--color-text);
+}
+
+.input-field::placeholder {
+    color: #999;
+}
+
+.input-error {
+    border-color: var(--color-accent);
+}
+
+.input-error:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.input-error-msg {
+    font-size: 12px;
+    color: var(--color-accent);
+    margin-top: 2px;
+}
