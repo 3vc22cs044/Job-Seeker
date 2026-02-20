@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-prp": "cd \"../Placement Readiness Platform\" && npm run build && robocopy dist \"../Job Seeker/public/placement-readiness\" /E /MIR"
   },
   "dependencies": {
     "framer-motion": "^12.34.0",
